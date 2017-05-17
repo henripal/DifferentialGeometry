@@ -32,4 +32,4 @@
   (compose (Lfree m) (F->C (sphere->R3 R))))
 
 (define ((Lfree mass) state)
-  (* 1/2 mass (square (velocity state))))
+  (* 1/2 mass (square (velocity state ()))))
